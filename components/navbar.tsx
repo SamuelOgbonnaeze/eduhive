@@ -20,7 +20,7 @@ const Navbar = () => {
                     <NavbarActions />
                 </div>
                 <div>
-                    <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8">
+                    <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8 hover:text-[#0F52BA] hover:bg-white ">
                         <span className="font-semibold text-xl ">
                             Sign up
                         </span>
