@@ -1,13 +1,14 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import NavbarActions from "./navbar-actions";
+import Logo from "@/public/Images/logo.png"
 
 const Navbar = () => {
     return (
         <div className="mt-[10px] w-full  ">
             <div className="flex items-center p-2 justify-between">
                 <div>
-                    <Image src="/images/logo.png"
+                    <Image src={Logo}
                         width={133}
                         height={45}
                         alt="logo"
