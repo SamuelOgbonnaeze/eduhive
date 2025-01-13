@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import NavbarActions from "./navbar-actions";
-import Logo from "@/public/Images/logo.png"
+import Logo from "../public/Images/logo.png"
 
 const Navbar = () => {
     return (

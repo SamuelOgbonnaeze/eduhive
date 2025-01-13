@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import Logo from "@/public/Images/logo-white.png"
+import Logo from "../public/Images/logo-white.png"
 import { GrGoogle, GrInstagram } from "react-icons/gr";
 import { FaFacebook } from "react-icons/fa";
 const Footer = () => {
