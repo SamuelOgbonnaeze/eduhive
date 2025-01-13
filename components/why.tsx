@@ -61,7 +61,7 @@ const dataItems = [
 const Why = () => {
     return (
         <>
-            <div className="relative   bg-[#F0F8FF] ">
+            <div className="relative   bg-[#F0F8FF]  rounded-[10px]">
                 <Image
                     src={EdgeImg}
                     width={120}
