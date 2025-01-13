@@ -10,6 +10,10 @@
   font-family: var(--font-poppins);
 }
 
+.font-roboto{
+  font-family: var(--font-roboto);
+}
+
 @media (prefers-color-scheme: white) {
   :root {
     --background: #0a0a0a;
