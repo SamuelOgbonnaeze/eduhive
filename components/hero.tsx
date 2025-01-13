@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 import { Button } from "./ui/button";
-import HeroImageUnderlay from "@/public/images/hero-image-underlay.png"
+import HeroImageUnderlay from "../public/Images/hero-image-underlay.png"
 
 const Hero = () => {
     return (
