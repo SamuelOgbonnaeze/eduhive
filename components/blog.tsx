@@ -56,7 +56,7 @@ const Card = ({ image, blogCategory, date, title, description }: CardProps) => {
                 </div>
                 <div className="flex flex-col  gap-y-[10px] " >
                     <p className="text-[#292929] font-semibold text-base ">{title}</p>
-                    <p className="text-[#292929] font-normal text-base ">{description}</p>
+                    <p className="text-[#292929] font-normal text-base w-[320px] ">{description}</p>
                 </div>
                 <div className=" w-[150px]" >
                     <Button className="bg-[#0F52BA] text-white hover:text-[#0F52BA] hover:bg-white font-medium text-xl border-[#0F52BA] shadow-md ">Read more</Button>

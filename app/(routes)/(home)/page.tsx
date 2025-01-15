@@ -4,6 +4,7 @@ import MeetAdmin from "@/components/meet-admin";
 import Navbar from "@/components/navbar";
 import Why from "@/components/why";
 import Blog from "@/components/blog";
+import Partners from "@/components/partners";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Why />
       <MeetAdmin />
       <Blog />
+      <Partners />
       Hello world
       
     </div>
