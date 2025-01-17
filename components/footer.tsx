@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-x-[100px] mt-5 md:mt-0 gap-y-4 md:gap-y-0 ">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-[100px] mt-5 md:mt-0 gap-y-4 lg:gap-y-0 ">
                     <div className="flex flex-col text-left gap-y-4 md:gap-y-6 ">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Product </p>

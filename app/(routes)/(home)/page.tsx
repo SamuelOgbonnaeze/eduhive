@@ -10,7 +10,7 @@ import CustomerReviews from "@/components/customer-reviews";
 
 export default function Home() {
   return (
-    <div className="px-[30px] md:px-[100px]">
+    <div className="px-[10px] lg:px-[100px]">
       <Navbar />
       <Hero />
       <Why />
