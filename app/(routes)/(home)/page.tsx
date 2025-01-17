@@ -5,19 +5,20 @@ import Navbar from "@/components/navbar";
 import Why from "@/components/why";
 import Blog from "@/components/blog";
 import Partners from "@/components/partners";
+import CustomerReviews from "@/components/customer-reviews";
 
 
 export default function Home() {
   return (
-    <div className="md:px-[100px]">
+    <div className="px-[30px] md:px-[100px]">
       <Navbar />
       <Hero />
       <Why />
       <MeetAdmin />
       <Blog />
       <Partners />
-      Hello world
-      
+      <CustomerReviews />
+
     </div>
   );
 }

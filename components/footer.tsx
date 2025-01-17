@@ -11,9 +11,9 @@ const Footer = () => {
     }
 
     return (
-        <div className="bg-[#0F52BA] text-white px-[100px] py-[80px]">
+        <div className="bg-[#0F52BA] text-white px-[30px] md:px-[100px] py-[40px] md:py-[80px] mt-[90px] ">
 
-            <div className="flex  justify-between mb-[40px] ">
+            <div className="flex flex-col md:flex-row justify-between mb-[40px] ">
                 <div className="flex flex-col">
                     <Image
                         src={Logo}
@@ -32,11 +32,11 @@ const Footer = () => {
                 </div>
 
 
-                <div className="grid grid-cols-4 gap-x-[100px] ">
-                    <div className="flex flex-col text-left gap-y-6">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 md:gap-x-[100px] mt-5 md:mt-0 gap-y-4 md:gap-y-0 ">
+                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6 ">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Product </p>
-                        <div className="flex flex-col gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
+                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal  ">
                             <p>Features</p>
                             <p>Solutions</p>
                             <p>Integrations</p>
@@ -45,10 +45,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col text-left gap-y-6">
+                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Resources </p>
-                        <div className="flex flex-col gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
+                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
                             <p>Partners</p>
                             <p>Community</p>
                             <p>Developers</p>
@@ -57,10 +57,10 @@ const Footer = () => {
                         </div>
                     </div>
                     
-                    <div className="flex flex-col text-left gap-y-6">
+                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Why Choose Us? </p>
-                        <div className="flex flex-col gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
+                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
                             <p>Channels</p>
                             <p>Scale</p>
                             <p>Watch the Demo</p>
@@ -68,10 +68,10 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="flex flex-col text-left gap-y-6">
+                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Company </p>
-                        <div className="flex flex-col gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
+                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
                             <p>About Us</p>
                             <p>News</p>
                             <p>Leadership</p>
