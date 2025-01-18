@@ -47,7 +47,7 @@ const Card = ({ image, blogCategory, date, title, description }: CardProps) => {
                     className="w-full h-auto object-cover aspect-video"
                 />
             </div>
-            <div className="px-4 md:px-6 flex flex-col mt-3 gap-y-4 pb-5">
+            <div className="px-2 md:px-6 flex flex-col mt-3 gap-y-4 pb-5">
                 <div className="flex gap-x-3 items-center">
                     <div className="bg-[#F1B53E] py-1 px-3 rounded-[5px]">
                         <p className="font-normal text-xs md:text-sm">{blogCategory}</p>
@@ -70,14 +70,14 @@ const Card = ({ image, blogCategory, date, title, description }: CardProps) => {
 
 const Blog = () => {
     return (
-        <div className="mt-10 md:mt-16 px-4 md:px-8">
+        <div className="mt-10 md:mt-16 px-2 sm:px-4 md:px-8">
             <div className="flex flex-col items-center justify-center gap-y-6">
                 <p className="font-medium text-2xl md:text-4xl text-[#0F52BA] text-center">Latest Blog Posts</p>
                 <p className="max-w-[690px] font-normal text-sm md:text-lg text-center">
                     Interactive group-based workshops for both individuals and organizations, available as single sessions or series.
                 </p>
             </div>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-6">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-2 md:gap-6">
                 {Data.map((data) => (
                     <Card
                         key={data.title}
