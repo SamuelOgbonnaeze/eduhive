@@ -41,7 +41,7 @@ export const SidebarRoutes = () => {
 
     const routes = Routes
     return (
-        <div className="relative flex flex-col w-full h-full gap-y-[30px] ">
+        <div className="relative flex flex-col w-full h-[100vh] gap-y-[30px] ">
             <div className=' pl-4 md:pl-[50px] mt-[35px] mb-[15px]'>
                 <Image
                     src={LogoWhite}
@@ -65,7 +65,7 @@ export const SidebarRoutes = () => {
                 ))}
             </div>
 
-            <button className='flex ml-5 md:ml-[50px] items-center gap-x-3 absolute bottom-[50px] text-white'>
+            <button className='flex ml-5 md:ml-[50px] items-center absolute gap-x-3 bottom-[50px] text-white'>
                 <RxExit size={20} />
                 <p className="font-semibold text-sm md:text-base">Log out</p>
             </button>

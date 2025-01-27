@@ -1,6 +1,6 @@
 "use client";
-
-import { usePathname, useRouter } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import Icon, { IconNames } from "./icon";
 
@@ -13,20 +13,21 @@ interface SidebarItemProps {
 
 export const SidebarItem = ({ icon, label, href }: SidebarItemProps) => {
     const pathname = usePathname();
-    const router = useRouter();
+    // const router = useRouter();
 
     const isActive =
         (pathname === `/students` && href === `/students`) ||
         pathname === href ||
         pathname?.startsWith(`${href}/`);
 
-    const onClick = () => {
-        router.push(href);
-    };
+    // const onClick = () => {
+    //     router.push(href);
+    // };
 
     return (
-        <button
-            onClick={onClick}
+        <Link
+        href={href}
+            // onClick={onClick}
             type="button"
             className={cn(
                 "flex w-full items-center gap-x-2 text-white text-sm md:text-base font-medium  transition-all hover:text-[#F1B53E] hover:bg-slate-300/20 pl-[50px]",
@@ -43,6 +44,6 @@ export const SidebarItem = ({ icon, label, href }: SidebarItemProps) => {
                 {label}
             </div>
 
-        </button>
+        </Link>
     );
 };
