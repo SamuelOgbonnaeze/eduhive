@@ -34,17 +34,16 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body>
-
         <div className="w-full h-[100vh] flex">
-          <div className=" w-[300px] border-r border-black  overflow-y-hidden bg-[#0F52BA]">
+          <div className="w-[300px] h-full border-r border-black bg-[#0F52BA] overflow-y-auto sticky top-0">
             <div className="flex flex-col w-full">
               <SidebarRoutes />
             </div>
           </div>
-        
-          <div className="w-full z-10">{children}</div>
-        </div>
 
+          {/* Main content */}
+          <div className="flex-1 overflow-y-auto">{children}</div>
+        </div>
       </body>
     </html>
   );

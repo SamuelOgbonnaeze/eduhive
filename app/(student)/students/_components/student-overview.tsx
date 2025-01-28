@@ -10,7 +10,7 @@ const StudentOverview = () => {
         const month = date.toLocaleString('default', { month: 'long' });
         const year = date.getFullYear();
       
-        // Capitalize the first letter of the month
+    
         const capitalizeFirstLetter = (str: string): string =>
           str.charAt(0).toUpperCase() + str.slice(1);
       
