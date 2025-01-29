@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import "@/app/globals.css";
 import { SidebarRoutes } from "./_components/sidebar-routes";
+import { Provider } from "@/components/ui/provider";
 
 
 
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${poppins.variable} ${roboto.variable}`} lang="en">
+    <html suppressHydrationWarning className={`${poppins.variable} ${roboto.variable}`} lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -42,7 +43,11 @@ export default function RootLayout({
           </div>
 
           {/* Main content */}
-          <div className="flex-1 overflow-y-auto">{children}</div>
+          <div className="flex-1 overflow-y-auto">
+            <Provider>
+              {children}
+            </Provider>
+          </div>
         </div>
       </body>
     </html>

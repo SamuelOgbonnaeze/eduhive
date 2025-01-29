@@ -28,7 +28,7 @@ export const SidebarRoutes = () => {
             href: `/students/grade`,
         },
         {
-            icon: "Briefcase",
+            icon: "ClipboardList",
             label: "Assignment",
             href: `/students/assignment`,
         },
