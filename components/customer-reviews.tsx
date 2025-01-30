@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from "next/image";
-import Quote from "../public/Images/quote-mark.png"
 import Rating from "../public/Images/rating.png"
 import Review1 from "../public/Images/review-1.png"
 import Review2 from "../public/Images/review-2.png"
@@ -36,13 +35,6 @@ const Data = [
 const Card = ({ image, review, name, role }: CardProps) => {
     return (
         <div className="relative bg-[#F0F8FF] border-[#0F52BA]/20 flex flex-col py-4 px-2 rounded-[5px] border w-[331px] h-[250px] " >
-            <Image
-                src={Quote}
-                width={20}
-                height={20}
-                alt="quotation mark"
-                className="absolute -right-5 -top-[10px]"
-            />
             <div className="flex flex-col gap-y-[20px] h-full ">
                 <Image
                     src={Rating}

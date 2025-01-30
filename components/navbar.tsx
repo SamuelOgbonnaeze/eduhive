@@ -3,6 +3,7 @@ import { Button } from "./ui/button";
 import NavbarActions from "./navbar-actions";
 import Logo from "../public/Images/logo.png"
 import Link from "next/link";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
     return (
@@ -17,18 +18,25 @@ const Navbar = () => {
                     />
 
                 </div>
-                <div>
-                    <NavbarActions />
-                </div>
-                <div>
-                    <Link href="/sign-up">
 
-                        <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8 hover:text-[#0F52BA] hover:bg-white ">
-                            <span className="font-semibold text-xl ">
-                                Sign up
-                            </span>
-                        </Button>
-                    </Link>
+                <div className="flex lg:hidden items-center">
+                    <Menu size={20} />
+                </div>
+
+                <div className="hidden lg:flex">
+                    <div>
+                        <NavbarActions />
+                    </div>
+                    <div>
+                        <Link href="/sign-up">
+
+                            <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8 hover:text-[#0F52BA] hover:bg-white ">
+                                <span className="font-semibold text-xl ">
+                                    Sign up
+                                </span>
+                            </Button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
