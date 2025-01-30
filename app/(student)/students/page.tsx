@@ -7,7 +7,7 @@ import StudentOverview from "./_components/student-overview";
 
 const StudentPage = () => {
     return (
-        <div className="w-full py-6 px-5 font-poppins ">
+        <div className="w-full px-3 py-4 lg:py-6 lg:px-5 font-poppins ">
             <StudentNavbar />
             <StudentOverview />
             <StudentAssignment />

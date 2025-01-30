@@ -25,19 +25,20 @@ const StudentOverview = () => {
 
 
     return (
-        <div className="mt-[38px] w-full h-[190px] rounded-[20px] bg-[#0F52BA] text-white flex items-center justify-between px-[50px] py-[35px] font-poppins ">
-            <div className="flex flex-col gap-y-[10px] text-left">
+        <div className="mt-[38px] w-full rounded-[20px] bg-[#0F52BA] text-white flex items-center justify-between px-3 md:px-5 lg:px-[50px] py-5 md:py-6 lg:py-[35px] font-poppins ">
+            <div className="flex flex-col gap-y-[5px] md:gap-y-2 lg:gap-y-[10px] text-left">
                 <p className="font-normal text-sm text-[#F9F9F9] ">{getFormattedDate()} </p>
-                <p className="font-normal text-5xl " >Welcome Sonia!</p>
-                <p className="font-medium text-sm ">Explore, learn, and discover something new.</p>
+                <p className="font-normal text-xl md:text-3xl lg:text-5xl " >Welcome Sonia!</p>
+                <p className="font-medium text-xs md:text-sm ">Explore, learn, and discover something new.</p>
             </div>
 
             <div>
                 <Image
                 src={Books}
-                width={210}
-                height={210}
+                width={80}
+                height={80}
                 alt="Welcome"
+                className="md:w-[150px] md:h-[150px] lg:w-[190px] lg:h-[190px] "
                 />
             </div>
 

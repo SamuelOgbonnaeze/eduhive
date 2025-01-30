@@ -36,7 +36,7 @@ export default function RootLayout({
       </head>
       <body>
         <div className="w-full h-[100vh] flex">
-          <div className="w-[300px] h-full border-r border-black bg-[#0F52BA] overflow-y-auto sticky top-0">
+          <div className="hidden md:flex md:w-[200px] lg:w-[300px] h-full border-r border-black bg-[#0F52BA] overflow-y-auto sticky top-0">
             <div className="flex flex-col w-full">
               <SidebarRoutes />
             </div>
