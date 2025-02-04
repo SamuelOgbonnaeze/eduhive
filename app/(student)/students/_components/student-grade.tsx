@@ -13,10 +13,10 @@ interface GradeCardProps {
 }
 const GradeCard = ({ progressValue, subject, lessonNumber, duration, assignmentNumber }: GradeCardProps) => {
     return (
-        <div className="max-w-[320px]  bg-[#F0F8FF] border border-[#0F52BA33] rounded-[10px] ">
-            <div className=" p-1 sm:p-2 pb-[40px] md:pb-[50px]">
+        <div className="max-w-[320px] max-h-[210px] bg-[#F0F8FF] border border-[#0F52BA33] rounded-[10px] ">
+            <div className=" p-1 sm:p-2 pb-[20px] md:pb-[35px]">
                 <div className="w-full flex items-center  gap-x-3 sm:gap-x-4 ">
-                    <div>
+                    <div className="flex items-center" >
                         <ProgressCircleRoot colorPalette={"blue"} value={progressValue} size={"lg"}>
                             <ProgressCircleValueText />
                             <ProgressCircleRing />
@@ -60,7 +60,7 @@ const StudentGrade = () => {
                 </Link>
             </div>
 
-            <div className="mt-[20px] grid grid-cols-1 lg:grid-cols-3 items-center justify-between gap-y-3">
+            <div className=" mt-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-y-2 mx-auto px-3">
 
                 <GradeCard
                     progressValue={79}
