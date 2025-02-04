@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { ProgressCircleRing, ProgressCircleRoot, ProgressCircleValueText } from "@/components/ui/progress-circle";
-import { BookOpenText, ClipboardList, Clock3, } from 'lucide-react';
+import { BookOpenText, ClipboardList, Clock3 } from 'lucide-react';
 
 interface GradeCardProps {
     progressValue: number;
@@ -9,20 +9,20 @@ interface GradeCardProps {
     lessonNumber: number;
     duration: number;
     assignmentNumber: number;
-
 }
+
 const GradeCard = ({ progressValue, subject, lessonNumber, duration, assignmentNumber }: GradeCardProps) => {
     return (
-        <div className="max-w-[320px] max-h-[210px] bg-[#F0F8FF] border border-[#0F52BA33] rounded-[10px] ">
-            <div className=" p-1 sm:p-2 pb-[20px] md:pb-[35px]">
-                <div className="w-full flex items-center  gap-x-3 sm:gap-x-4 ">
-                    <div className="flex items-center" >
+        <div className="max-w-[310px] max-h-[210px] bg-[#F0F8FF] border border-[#0F52BA33] rounded-[10px] ">
+            <div className="p-1 sm:p-2 pb-[20px] md:pb-[35px]">
+                <div className="w-full flex items-center gap-x-3 sm:gap-x-4">
+                    <div className="flex items-center">
                         <ProgressCircleRoot colorPalette={"blue"} value={progressValue} size={"lg"}>
                             <ProgressCircleValueText />
                             <ProgressCircleRing />
                         </ProgressCircleRoot>
                     </div>
-                    <div className="">
+                    <div>
                         <p className="font-medium text-lg sm:text-xl">{subject}</p>
                     </div>
                 </div>
@@ -41,13 +41,19 @@ const GradeCard = ({ progressValue, subject, lessonNumber, duration, assignmentN
                         <ClipboardList className="text-[#0F52BA]" size={18} />
                         <p className="text-[#292929] font-normal text-xs sm:text-sm">{assignmentNumber} assignment</p>
                     </div>
-
                 </div>
             </div>
-
         </div>
-    )
-}
+    );
+};
+
+const gradeData = [
+    { progressValue: 79, subject: "Molecular Biology", lessonNumber: 21, duration: 52, assignmentNumber: 6 },
+    { progressValue: 80, subject: "Organic Chemistry", lessonNumber: 10, duration: 45, assignmentNumber: 4 },
+    { progressValue: 52, subject: "Mathematics", lessonNumber: 10, duration: 45, assignmentNumber: 4 },
+    { progressValue: 88, subject: "Physics", lessonNumber: 15, duration: 50, assignmentNumber: 5 },
+    { progressValue: 70, subject: "English", lessonNumber: 18, duration: 40, assignmentNumber: 3 },
+];
 
 const StudentGrade = () => {
     return (
@@ -60,37 +66,20 @@ const StudentGrade = () => {
                 </Link>
             </div>
 
-            <div className=" mt-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-y-2 mx-auto px-3">
-
-                <GradeCard
-                    progressValue={79}
-                    subject="Molecular Biology"
-                    lessonNumber={21}
-                    duration={52}
-                    assignmentNumber={6}
-                />
-
-
-                <GradeCard
-                    progressValue={80}
-                    subject="Organic Chemistry"
-                    lessonNumber={10}
-                    duration={45}
-                    assignmentNumber={4}
-
-                />
-
-                <GradeCard
-                    progressValue={52}
-                    subject="Mathematics"
-                    lessonNumber={10}
-                    duration={45}
-                    assignmentNumber={4}
-
-                />
+            <div className="mt-[20px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-center justify-between gap-y-2 mx-auto px-3">
+                {gradeData.map((grade, index) => (
+                    <GradeCard
+                        key={index}
+                        progressValue={grade.progressValue}
+                        subject={grade.subject}
+                        lessonNumber={grade.lessonNumber}
+                        duration={grade.duration}
+                        assignmentNumber={grade.assignmentNumber}
+                    />
+                ))}
             </div>
         </div>
     );
-}
+};
 
 export default StudentGrade;

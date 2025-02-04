@@ -87,7 +87,7 @@ const StudentAssignment = () => {
 
       {/* Assignment Cards */}
       <div className="w-full flex items-center shadow-md lg:shadow-none drop-shadow-md lg:drop-shadow-none shadow-[#00000040] py-5 lg:py-0 rounded-[10px] lg:bg-none bg-[#0F52BA] bg-opacity-[3%] ">
-        <div className="my-[20px] w-[95%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-y-2 px-3 mx-auto  ">
+        <div className="my-[20px] sm:w-[95%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 justify-between gap-y-2 px-3 mx-auto  ">
           {assignments.map((assignment, index) => (
             <AssignmentCard
               key={index}

@@ -1,6 +1,7 @@
 //
 
 import StudentAssignment from "./_components/student-assignment";
+import StudentCalendar from "./_components/student-calendar";
 import StudentGrade from "./_components/student-grade";
 import StudentNavbar from "./_components/student-navbar";
 import StudentOverview from "./_components/student-overview";
@@ -12,6 +13,7 @@ const StudentPage = () => {
             <StudentOverview />
             <StudentAssignment />
             <StudentGrade />
+            <StudentCalendar />
         </div>
 
     );

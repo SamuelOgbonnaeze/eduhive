@@ -28,7 +28,7 @@ const StudentOverview = () => {
         <div className="mt-[38px] w-full rounded-[20px] bg-[#0F52BA] text-white flex items-center justify-between px-3 md:px-5 lg:px-[50px] py-5 md:py-6 lg:py-[35px] font-poppins ">
             <div className="flex flex-col gap-y-[5px] md:gap-y-2 lg:gap-y-[10px] text-left">
                 <p className="font-normal text-sm text-[#F9F9F9] ">{getFormattedDate()} </p>
-                <p className="font-normal text-xl md:text-3xl lg:text-5xl " >Welcome Sonia!</p>
+                <p className="font-normal text-2xl md:text-3xl lg:text-5xl " >Welcome Sonia!</p>
                 <p className="font-medium text-xs md:text-sm ">Explore, learn, and discover something new.</p>
             </div>
 
