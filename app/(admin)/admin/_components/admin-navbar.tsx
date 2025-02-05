@@ -10,10 +10,10 @@ const AdminNavbar = () => {
                         placeholder="Search for students name"
                         className="border-none shadow-none font-normal focus:outline-none focus:ring-0"
                     />
-                    <Search size={16} className="mr-[55px]" />
+                    <Search size={16} className="" />
                 </div>
                 <div>
-                    <Bolt size={20} className="text-[#292929]" />
+                    <Bolt size={20} className="text-[#292929] mr-[55px]" />
                 </div>
             </div>
 

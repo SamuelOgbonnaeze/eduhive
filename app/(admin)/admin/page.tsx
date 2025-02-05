@@ -1,4 +1,6 @@
 import AdminNavbar from "./_components/admin-navbar";
+import AdminOverview from "./_components/admin-overview";
+import Attendance from "./_components/attendance";
 
 const AdminPage = () => {
     return (
@@ -7,7 +9,8 @@ const AdminPage = () => {
                 <AdminNavbar />
             </div>
             <div className="mt-[50px] lg:px-5 px-3 ">
-                meoivnej
+                <AdminOverview />
+                <Attendance />
             </div>
         </div>
     );
