@@ -20,7 +20,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "Student Dashboard",
+    title: "Admin Dashboard",
     description: "Your digital hub for student records",
 };
 
