@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import Icon, { IconNames } from "@/components/ui/icon";
 
 
+
 interface SidebarItemProps {
     icon: IconNames;
     label: string;
@@ -30,7 +31,7 @@ export const SidebarItem = ({ icon, label, href }: SidebarItemProps) => {
             // onClick={onClick}
             type="button"
             className={cn(
-                "flex w-full items-center gap-x-2 text-white text-sm md:text-base font-medium  transition-all hover:text-[#F1B53E] hover:bg-slate-300/20 pl-[50px]",
+                "flex w-full items-center gap-x-2 text-white text-sm md:text-base font-medium  transition-all hover:text-[#F1B53E] hover:bg-slate-300/20 pl-[30px]",
                 isActive && "text-[#F1B53E] bg-sky-200/20 hover:bg-sky-200/20 hover:text-[#F1B53E]/70 border-[#F1B53E] border-l-4 md:border-l-6 rounded-md "
             )}
         >
