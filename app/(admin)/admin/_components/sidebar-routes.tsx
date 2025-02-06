@@ -25,7 +25,7 @@ export const SidebarRoutes = () => {
         {
             icon: "BookText",
             label: "New Record ",
-            href: `/students/grade`,
+            href: `/admin/new`,
         },
         {
             icon: "Book",
