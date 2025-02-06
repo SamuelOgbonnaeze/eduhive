@@ -60,7 +60,7 @@ const AddRecordForm = () => {
     }
 
     return (
-        <div className="mb-[50px]">
+        <div className="">
             <div className="bg-[#F0F8FF] py-[34px] px-3 rounded-b-[10px]">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
@@ -174,7 +174,6 @@ const AddRecordForm = () => {
 
 
             <div className="flex justify-end my-4 gap-x-2.5">
-
                 <Button variant={"outline"} className="w-[140px] h-[53px] border border-[#0F52BA] hover:bg-[#0F52BA] hover:text-white text-[#0F52BA] rounded-[15px] py-3 px-2.5 font-medium text-lg " >Save as draft</Button>
                 <Button  type="submit" className="w-[140px] h-[53px]  bg-[#0F52BA] hover:bg-white hover:text-[#0F52BA] hover:border-[#0F52BA] hover:border text-white rounded-[15px] py-3 px-2.5 font-medium text-lg "  >Submit</Button>
             </div>
