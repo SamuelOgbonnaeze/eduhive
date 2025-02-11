@@ -43,7 +43,7 @@ const Login = () => {
 
 
       {/* Login Form */}
-      <div className="w-full px-4 md:px-[120px] mt-[250px]">
+      <div className="w-full flex items-center px-4 md:px-[150px] ">
         <LoginForm />
       </div>
     </div>

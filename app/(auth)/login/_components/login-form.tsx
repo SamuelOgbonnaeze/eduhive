@@ -39,7 +39,7 @@ const LoginForm = () => {
     }
 
     return (
-        <div className="w-full " >
+        <div className="w-full max-w-[600px] " >
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <FormField
