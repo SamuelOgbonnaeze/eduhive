@@ -3,6 +3,9 @@
 import { Progress } from "@/components/ui/progress"
 import { ColumnDef } from "@tanstack/react-table"
 import { IoPerson } from "react-icons/io5";
+import CellAction from "./cell-action";
+
+
 
 
 export type Student = {
@@ -12,6 +15,7 @@ export type Student = {
   studentId: string
   progress: string
 }
+
 
 export const columns: ColumnDef<Student>[] = [
   {
@@ -51,7 +55,14 @@ export const columns: ColumnDef<Student>[] = [
     },
   },
   {
-    accessorKey: "amount",
-    header: "",
+    id: "actions",
+    cell: ({ row }) => {
+      const data = row.original
+      return (
+        <div className="flex ">
+          <CellAction data={data} />
+        </div>
+      )
+    }
   },
 ]

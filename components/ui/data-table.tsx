@@ -33,7 +33,7 @@ export function DataTable<TData, TValue>({
 
     return (
         <div className="rounded-md border">
-            <Table className="">
+            <Table>
                 <TableHeader className="bg-[#0F52BA] text-white font-semibold text-base md:text-lg lg:text-xl ">
                     {table.getHeaderGroups().map((headerGroup) => (
                         <TableRow key={headerGroup.id}>
@@ -55,18 +55,17 @@ export function DataTable<TData, TValue>({
                 <TableBody className="space-y-7 w-full bg-[#F0F8FF]">
                     {table.getRowModel().rows?.length ? (
                         table.getRowModel().rows.map((row) => (
-                            <div key={row.id} >
-                                <TableRow
-                                    className=" shadow-sm rounded-sm w-full"
-                                    data-state={row.getIsSelected() && "selected"}
-                                >
-                                    {row.getVisibleCells().map((cell) => (
-                                        <TableCell key={cell.id} className="p-4">
-                                            {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                                        </TableCell>
-                                    ))}
-                                </TableRow>
-                            </div>
+                            <TableRow 
+                                key={row.id}
+                                className=" shadow-sm rounded-sm w-full"
+                                data-state={row.getIsSelected() && "selected"}
+                            >
+                                {row.getVisibleCells().map((cell) => (
+                                    <TableCell key={cell.id} className="p-4">
+                                        {flexRender(cell.column.columnDef.cell, cell.getContext())}
+                                    </TableCell>
+                                ))}
+                            </TableRow>
                         ))
                     ) : (
                         <TableRow>

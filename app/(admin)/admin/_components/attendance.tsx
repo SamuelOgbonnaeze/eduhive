@@ -1,7 +1,9 @@
+"use client"
 
 import { Student } from "@/type";
 import { DataTable } from "@/components/ui/data-table";
 import { columns } from "./columns";
+
 
 const Attendance= ()=>{
 
@@ -83,6 +85,8 @@ const Attendance= ()=>{
         <div className="mt-5 flex flex-col gap-y-3">
           <p className="font-semibold text-xl ">Student Attendance</p>
           <DataTable columns={columns} data={data} />
+
+       
         </div>
     )
 }
