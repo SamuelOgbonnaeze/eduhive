@@ -1,6 +1,4 @@
-"use client"
 
-import { EllipsisVertical } from 'lucide-react';
 import { Student } from "./columns";
 import { Button } from "@/components/ui/button";
 
@@ -10,13 +8,13 @@ interface CellActionProps {
     data: Student;
 }
 
-const CellAction: React.FC<CellActionProps> = () => {
+const CellAction = ({ data }: CellActionProps) => {
 
     return (
         <div className="flex overflow-visible">
-            <Link href="/admin/student-details" >
-                <Button variant="ghost" className='h-8 w-8 p-0'>
-                <EllipsisVertical size={20} />
+            <Link href={`/admin/student-details/${data.studentId}`} >
+                <Button variant="ghost" className='h-8 w-8 p-0 '>
+                   <p className="text-xs">Open</p>
                 </Button>
             </Link>
 

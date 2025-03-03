@@ -1,7 +1,12 @@
 export interface Student {
-    id: string
-    number: string
-    name: string
-    studentId: string
-    progress: string
+    id: string;
+    name: string;
+    faculty: string;
+    matric: string;
+    cgpa: string;
+    department: string;
+    registration: string;
+    number: string;       
+    studentId: string;     
+    progress: number;     
 }

@@ -13,7 +13,8 @@ export type Student = {
   number: string
   name: string
   studentId: string
-  progress: string
+  progress: number
+  matric: string
 }
 
 
@@ -37,8 +38,8 @@ export const columns: ColumnDef<Student>[] = [
     }
   },
   {
-    accessorKey: "studentId",
-    header: "ID",
+    accessorKey: "matric",
+    header: "Matric No",
   },
   {
     accessorKey: "progress",
