@@ -1,22 +1,21 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
-import Icon, { IconNames } from "@/components/ui/icon";
 
 interface SidebarItemProps {
-    icon: IconNames;
+    icon: React.ElementType; // Accepts a component instead of a string
     label: string;
     href: string;
 }
 
-export const SidebarItem = ({ icon, label, href }: SidebarItemProps) => {
+export const SidebarItem = ({ icon: IconComponent, label, href }: SidebarItemProps) => {
     const pathname = usePathname();
 
     const isActive =
-    pathname === href || 
-    (href !== "/admin" && pathname?.startsWith(`${href}/`)); // Match sub-paths only if not "/admin"
-
+        pathname === href ||
+        (href !== "/admin" && pathname?.startsWith(`${href}/`));
 
     return (
         <Link
@@ -28,11 +27,7 @@ export const SidebarItem = ({ icon, label, href }: SidebarItemProps) => {
             )}
         >
             <div className="flex items-center gap-x-2 py-4">
-                <Icon
-                    name={icon}
-                    size={22}
-                    className={cn("text-white", isActive && "text-[#F1B53E]")}
-                />
+                <IconComponent size={22} className={cn("text-white", isActive && "text-[#F1B53E]")} />
                 {label}
             </div>
         </Link>
