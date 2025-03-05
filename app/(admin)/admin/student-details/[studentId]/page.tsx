@@ -1,7 +1,7 @@
 import ClientStudentDetails from "./components/client-student-details";
 
 interface StudentDetailsProps {
-    params: Promise<{ studentId: string }>; // params is now async in Next.js 15
+    params: Promise<{ studentId: string }>; 
 }
 
 const StudentDetails = async ({ params }: StudentDetailsProps) => {

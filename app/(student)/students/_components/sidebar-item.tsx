@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 interface SidebarItemProps {
-    icon: React.ElementType; // Accepts a React component instead of a string
+    icon: React.ElementType; 
     label: string;
     href: string;
 }
