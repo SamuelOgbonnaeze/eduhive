@@ -15,7 +15,7 @@ const Hero = () => {
                     Records
                 </p>
                 <p className="  font-normal mt-6 text-sm sm:text-base md:text-lg text-[#292929]">
-                    Indulge in a variety of mouthwatering dishes, crafted with fresh ingredients and bold flavors to create a dining experience that celebrates the joy of food.
+                    EduHive is a student record management platform that simplifies data organization, enhances accessibility, and ensures secure storage for academic institutions and students.
                 </p>
                 <div className="flex items-center gap-3 mt-6">
                     <Link href="/login" >
@@ -40,7 +40,7 @@ const Hero = () => {
                     alt="Hero Image"
                     className="w-full lg:w-[970px] lg:h-[640px] object-contain lg:-right-10 overflow-hidden bottom-0 "
                 />
-               
+
             </div>
         </div>
     );

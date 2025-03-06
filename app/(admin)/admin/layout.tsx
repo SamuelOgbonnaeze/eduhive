@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import "@/app/globals.css";
 import { SidebarRoutes } from "./_components/sidebar-routes";
-// import { SidebarRoutes } from "./_components/sidebar-routes";
-// import { Provider } from "@/components/ui/provider";
+
 
 
 
