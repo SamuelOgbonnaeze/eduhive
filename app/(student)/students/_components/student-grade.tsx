@@ -61,8 +61,8 @@ const StudentGrade = () => {
             {/* Header */}
             <div className="w-full flex items-center justify-between border-b-2 border-[#0F52BA]/20">
                 <p className="font-medium text-xl">Grade</p>
-                <Link href="/grade">
-                    <p className="text-[#0F52BA] text-lg font-medium">see more</p>
+                <Link href="/students/grade">
+                    <p className="text-[#0F52BA] text-lg font-medium">View more</p>
                 </Link>
             </div>
 

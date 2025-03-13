@@ -80,7 +80,7 @@ const StudentAssignment = () => {
       {/* Header */}
       <div className="w-full flex items-center justify-between border-b-2 border-[#0F52BA]/20 py-2">
         <p className="font-medium text-lg sm:text-xl">Your Assignment</p>
-        <Link href="/assignment">
+        <Link href="/students/assignment">
           <p className="text-[#0F52BA] text-base sm:text-lg font-medium">View more</p>
         </Link>
       </div>

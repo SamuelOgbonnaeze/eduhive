@@ -2,8 +2,9 @@
 
 import Image from "next/image";
 
-import { Input } from "@/components/ui/input";
-import { Button } from "@chakra-ui/react"
+import { Input } from "@/components/ui/input"
+import { Separator } from "@/components/ui/separator"
+import { Button,  } from "@chakra-ui/react"
 import {
     DialogBody,
     DialogCloseTrigger,
@@ -19,6 +20,7 @@ import StudentProfile from "@/public/Images/student-profile.png"
 import { Search, Menu } from 'lucide-react';
 import { Bolt } from 'lucide-react';
 import { BellDot } from 'lucide-react';
+import Link from "next/link";
 
 
 
@@ -36,14 +38,27 @@ const StudentNavbar = () => {
                             <Menu size={20} className="text-[#0F52BA]" />
                         </Button>
                     </DialogTrigger>
-                    <DialogContent>
-                        <DialogHeader>
-                            <DialogTitle>Dialog Title</DialogTitle>
+                    <DialogContent className="bg-[#0F52BA]/80 text-white">
+                        <DialogHeader className="mt-10">
+                            <DialogTitle className="text-4xl flex font-semibold items-center">Eduhive</DialogTitle>
                             <DialogCloseTrigger />
                         </DialogHeader>
-                        <DialogBody>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <DialogBody >
+                            <div className="flex flex-col gap-y-5  justify-start text-2xl font-medium p-2 ">
+                                <Link href="/students">
+                                    <p>Home</p>
+                                </Link>
+                                <Link href="/students/grade">
+                                    <p>Grade</p>
+                                </Link>
+                                <Link href="/students/assignment">
+                                    <p>Assignment</p>
+                                </Link>
+                                <Link href="/students/analytics">
+                                    <p>Analytics</p>
+                                </Link>
+                            </div>
+
                         </DialogBody>
                     </DialogContent>
                 </DialogRoot>
@@ -86,7 +101,10 @@ const StudentNavbar = () => {
                         <Bolt className="cursor-pointer" size={20} />
                     </div>
                 </div>
+               
             </div>
+            <Separator className="my-4" />
+
         </div>
 
     );

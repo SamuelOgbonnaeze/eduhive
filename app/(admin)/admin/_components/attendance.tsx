@@ -134,7 +134,7 @@ const Attendance = () => {
 
   return (
     <div className="mt-5 flex flex-col gap-y-3">
-      <p className="font-semibold text-xl ">Student Attendance</p>
+      <p className="font-semibold text-xl ">Students Overview</p>
       <DataTable columns={columns} data={data} />
     </div>
   )

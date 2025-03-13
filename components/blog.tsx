@@ -70,7 +70,7 @@ const Card = ({ image, blogCategory, date, title, description }: CardProps) => {
 
 const Blog = () => {
     return (
-        <div className="mt-10 md:mt-16 px-2 sm:px-4 md:px-8">
+        <div id="blog" className="mt-10 md:mt-16 px-2 sm:px-4 md:px-8">
             <div className="flex flex-col items-center justify-center gap-y-6">
                 <p className="font-medium text-2xl md:text-4xl text-[#0F52BA] text-center">Latest Blog Posts</p>
                 <p className="max-w-[690px] font-normal text-sm md:text-lg text-center">

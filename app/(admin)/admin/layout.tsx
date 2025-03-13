@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Poppins, Roboto } from "next/font/google";
 import "@/app/globals.css";
 import { SidebarRoutes } from "./_components/sidebar-routes";
-
-
+import { Provider } from "@/components/ui/provider";
+import AdminNavbar from "./_components/admin-navbar";
 
 
 const poppins = Poppins({
@@ -44,7 +44,12 @@ export default function RootLayout({
 
                     {/* Main content */}
                     <div className="flex-1 overflow-y-auto">
-                        {children}
+                        <Provider>
+                            <div className="lg:pl-5 pl-3">
+                                <AdminNavbar />
+                            </div>
+                            {children}
+                        </Provider>
                     </div>
                 </div>
             </body>

@@ -32,7 +32,7 @@ const MeetAdmin = () => {
                         alt="Administrator"
                         width={400}
                         height={400}
-                        className="w-full max-w-[400px] h-auto object-cover rounded-md"
+                        className="w-[300px] h-[300px] md:w-[400px] md:h-[400px] object-cover rounded-md"
                     />
                 </div>
             </div>

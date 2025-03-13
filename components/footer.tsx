@@ -11,7 +11,7 @@ const Footer = () => {
     }
 
     return (
-        <div className="bg-[#0F52BA] text-white px-[30px] md:px-[70px] py-[40px] md:py-[80px] mt-[90px] ">
+        <div id="support" className="bg-[#0F52BA] text-white px-[30px] md:px-[70px] py-[40px] md:py-[80px] mt-[90px] ">
 
             <div className="flex flex-col md:flex-row justify-between mb-[40px] ">
                 <div className="flex flex-col">
@@ -33,18 +33,6 @@ const Footer = () => {
 
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-5 md:gap-x-[100px] mt-5 md:mt-0 gap-y-4 lg:gap-y-0 ">
-                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6 ">
-                        {/* section header */}
-                        <p className="font-medium text-lg tracking-[0.25px] ">Product </p>
-                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal  ">
-                            <p>Features</p>
-                            <p>Solutions</p>
-                            <p>Integrations</p>
-                            <p>Enterprise</p>
-                            <p>Solutions</p>
-                        </div>
-                    </div>
-
                     <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
                         {/* section header */}
                         <p className="font-medium text-lg tracking-[0.25px] ">Resources </p>
@@ -53,29 +41,26 @@ const Footer = () => {
                             <p>Community</p>
                             <p>Developers</p>
                             <p>App</p>
-                            <p>Blog</p>
-                        </div>
-                    </div>
-                    
-                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
-                        {/* section header */}
-                        <p className="font-medium text-lg tracking-[0.25px] ">Why Choose Us? </p>
-                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
-                            <p>Channels</p>
-                            <p>Scale</p>
-                            <p>Watch the Demo</p>
-                            <p>Our Competition</p>
+
                         </div>
                     </div>
 
                     <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
-                        {/* section header */}
+                        <p className="font-medium text-lg tracking-[0.25px] ">Why Choose Us? </p>
+                        <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
+                            <p>Channels</p>
+                            <p>Features</p>
+                            <p>Blog</p>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col text-left gap-y-4 md:gap-y-6">
                         <p className="font-medium text-lg tracking-[0.25px] ">Company </p>
                         <div className="flex flex-col gap-y-1 md:gap-y-3 text-sm tracking-[0.25px] font-roboto font-normal ">
                             <p>About Us</p>
                             <p>News</p>
                             <p>Leadership</p>
-                            <p>Media Kit</p>
+                            <p>Solutions</p>
                         </div>
                     </div>
                 </div>

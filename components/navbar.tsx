@@ -24,20 +24,22 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden lg:flex">
-                    <div>
-                        <NavbarActions />
-                    </div>
-                    <div>
-                        <Link href="/sign-up">
-
-                            <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8 hover:text-[#0F52BA] hover:bg-white ">
-                                <span className="font-semibold text-xl ">
-                                    Sign up
-                                </span>
-                            </Button>
-                        </Link>
-                    </div>
+                    <NavbarActions />
                 </div>
+
+
+
+                <div className="hidden lg:flex">
+                    <Link href="/sign-up">
+
+                        <Button variant="default" className="bg-[#0F52BA] rounded-[10px] px-8 hover:text-[#0F52BA] hover:bg-white ">
+                            <span className="font-semibold text-xl ">
+                                Sign up
+                            </span>
+                        </Button>
+                    </Link>
+                </div>
+
             </div>
         </div>
     );

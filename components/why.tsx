@@ -96,7 +96,7 @@ const Why = () => {
             </div>
 
             {/* How It Works Section */}
-            <div className="w-full flex flex-col items-center mt-[40px] md:mt-[64px] gap-y-[20px] md:gap-y-[30px] px-4 md:px-8">
+            <div id="product" className="w-full flex flex-col items-center mt-[40px] md:mt-[64px] gap-y-[20px] md:gap-y-[30px] px-4 md:px-8">
                 <h2 className="font-medium text-2xl md:text-3xl text-[#0F52BA] text-center">
                     How it works
                 </h2>
