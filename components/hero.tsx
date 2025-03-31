@@ -18,12 +18,12 @@ const Hero = () => {
                     EduHive is a student record management platform that simplifies data organization, enhances accessibility, and ensures secure storage for academic institutions and students.
                 </p>
                 <div className="flex items-center gap-3 mt-6">
-                    <Link href="/login" >
+                    <Link href="/login/students" >
                         <Button className="font-semibold text-sm sm:text-base md:text-lg px-4 py-2 bg-[#0F52BA] text-white hover:bg-white hover:text-[#0F52BA] border border-[#0F52BA] rounded-[6px] shadow-sm">
                             Login as Student
                         </Button>
                     </Link>
-                    <Link href="/login">
+                    <Link href="/login/admin">
                         <Button className="font-semibold text-sm sm:text-base md:text-lg px-4 py-2 bg-[#0F52BA]/10 text-black hover:bg-black hover:text-white border border-[#0F52BA]/10 rounded-[6px] shadow-sm">
                             Login as Admin
                         </Button>

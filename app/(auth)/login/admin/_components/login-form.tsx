@@ -18,16 +18,16 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 
 const formSchema = z.object({
     userId: z.string().min(2).max(50),
-    password: z.string().min(1).max(6),
+    password: z.string().min(6).max(6),
     userRole: z.enum(["admin", "student"]),
 })
 
-const LoginForm = () => {
+const AdminLoginForm = () => {
     const router = useRouter()
 
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
-        mode: "onChange", 
+        mode: "onChange",
         defaultValues: {
             userId: "",
             password: "",
@@ -35,15 +35,14 @@ const LoginForm = () => {
         },
     })
 
-  
+
     function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values)
-        router.push(values.userRole === "admin" ? "/admin" : "/students")
+        router.push("/admin")
     }
-
     return (
         <div className="w-full max-w-[600px]">
-        
+
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                     <FormField
@@ -84,7 +83,7 @@ const LoginForm = () => {
                                         </SelectTrigger>
                                         <SelectContent>
                                             <SelectItem value="admin">Admin</SelectItem>
-                                            <SelectItem value="student">Student</SelectItem>
+
                                         </SelectContent>
                                     </Select>
                                 </FormControl>
@@ -97,7 +96,7 @@ const LoginForm = () => {
                         <Button
                             className="flex mx-auto w-[200px] md:w-[330px] bg-[#0F52BA] text-white hover:bg-white hover:text-[#0F52BA] border border-[#0F52BA] rounded-[20px]"
                             type="submit"
-                            disabled={!form.formState.isValid} 
+                            disabled={!form.formState.isValid}
                         >
                             Login
                         </Button>
@@ -108,4 +107,4 @@ const LoginForm = () => {
     );
 }
 
-export default LoginForm;
+export default AdminLoginForm;

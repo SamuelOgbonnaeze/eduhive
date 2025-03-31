@@ -147,7 +147,7 @@ const ClientStudentDetails: React.FC<ClientStudentDetailsProps> = ({ studentId }
                 </div>
             </Link>
 
-            <div className="w-full min-h-screen flex flex-col font-poppins text-[#292929] p-4 items-center justify-center">
+            <div className="w-full  flex flex-col font-poppins text-[#292929] p-4 items-center justify-center">
 
                 <p className="w-full text-center text-2xl font-semibold py-3">STUDENT RECORD</p>
                 <div className="w-full max-w-[918px] flex flex-col md:flex-row items-center justify-center mx-auto py-8 space-y-4 md:space-y-0 md:space-x-8">
